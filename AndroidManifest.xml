@@ -25,6 +25,14 @@
         <activity 
             android:name=".FirstFragment"> 
         </activity>
+        <activity 
+            android:name="com.example.register.login">
+            
+            <intent-filter>
+                <action android:name="com.example.highspeed.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

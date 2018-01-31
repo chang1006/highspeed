@@ -1,6 +1,7 @@
 package com.example.highspeed;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -19,13 +20,16 @@ public class MainActivity extends Activity implements OnClickListener{
 
     private FrameLayout ly_content;
 
-    private FirstFragment f1,f2,f3,f4;
+    private FirstFragment f1,f2,f3;
+    //private FirstFragment f2;
+    //private FirstFragment f3;
+    private FourthFragment f4;
     private FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
         bindView();
@@ -90,7 +94,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
             case R.id.txt_order:
                 selected();
-                tabUser.setSelected(true);
+                tabOrder.setSelected(true);
                 if(f2==null){
                     f2 = new FirstFragment("第二个Fragment");
                     transaction.add(R.id.fragment_container,f2);
@@ -101,9 +105,9 @@ public class MainActivity extends Activity implements OnClickListener{
 
             case R.id.txt_service:
                 selected();
-                tabOrder.setSelected(true);
+                tabService.setSelected(true);
                 if(f3==null){
-                    f3 = new FirstFragment("第三个Fragment");
+                    f3 = new FirstFragment("第三Fragment");
                     transaction.add(R.id.fragment_container,f3);
                 }else{
                     transaction.show(f3);
@@ -112,9 +116,9 @@ public class MainActivity extends Activity implements OnClickListener{
 
             case R.id.txt_user:
                 selected();
-                tabService.setSelected(true);
+                tabUser.setSelected(true);
                 if(f4==null){
-                    f4 = new FirstFragment("第四个Fragment");
+                    f4 = new FourthFragment();
                     transaction.add(R.id.fragment_container,f4);
                 }else{
                     transaction.show(f4);
