@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/logintext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/transparent"
+        android:textColor="@color/blue"
+        android:gravity="left|center"
+        android:drawableLeft="@mipmap/ic_menu_user_on"
+        android:textSize="20dp"
+        android:hint="请登录"
+        android:textColorHint="@color/blue"/>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_above="@id/logintext"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">>
+    <TextView
+        android:id="@+id/license"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/transparent"
+        android:gravity="left|center"
+        android:text="车辆信息" />
+        <TextView
+            android:id="@+id/licensenumber"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/transparent"
+            android:gravity="left|center"
+            android:paddingLeft="30dp"
+            android:text="车辆信息" />
+        <TextView
+            android:id="@+id/licensetype"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/transparent"
+            android:gravity="left|center"
+            android:paddingLeft="30dp"
+            android:text="车辆信息" />
+    </LinearLayout>
+    <View
+        android:id="@+id/div_tab_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_above="@id/license"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/yinhangka"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/transparent"
+        android:gravity="left|center"
+        android:text="我的银行卡" />
+    <View
+        android:id="@+id/div_tab_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_above="@id/yinhangka"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/tuichu"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/transparent"
+        android:gravity="left|center"
+        android:text="退出登录" />
+
+</LinearLayout>
+

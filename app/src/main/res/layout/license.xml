@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <requestFocus />
+
+    <TextView
+        android:id="@+id/licensetitle"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="绑定车票"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入车牌号码"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:hint="请选择车型" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="确定" />
+
+
+
+</LinearLayout>
+

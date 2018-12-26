@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/rukou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@color/transparent"
+                    android:gravity="left|center"
+                    android:text="入口站" />
+                <TextView
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:background="@color/transparent"
+                    android:gravity="left|center"
+                    android:text="入口站" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparent"
+                app:srcCompat="@mipmap/right" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true">
+                <TextView
+                    android:id="@+id/chukou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@color/transparent"
+                    android:gravity="left|center"
+                    android:text="出口站" />
+                <TextView
+                    android:id="@+id/end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:background="@color/transparent"
+                    android:gravity="left|center"
+                    android:text="出口站" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_above="@id/end"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/riqi"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/transparent"
+        android:gravity="left|center"
+        android:text="出发日期:" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:gravity="left|center"
+            android:text="日期" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_above="@id/time"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/chepai"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/transparent"
+        android:gravity="left|center"
+        android:text="车辆信息:" />
+        <TextView
+            android:id="@+id/licence"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:gravity="left|center"
+            android:text="车辆信息" />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:textColor="@color/black"
+            android:gravity="left|center"
+            android:text="车辆信息" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_above="@id/license"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/jine"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/transparent"
+        android:gravity="left|center"
+        android:text="订单金额" />
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/transparent"
+        android:textColor="@color/black"
+        android:gravity="left|center"
+        android:text="订单金额" />
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/payV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dodgerblue"
+        android:onClick="payV2"
+        tools:ignore="HardcodedText"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="预约"
+        android:textColor="@color/black" />
+    </RelativeLayout>
+
+</LinearLayout>
