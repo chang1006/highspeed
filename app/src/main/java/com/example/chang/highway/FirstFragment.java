@@ -16,6 +16,8 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.amap.api.maps.MapView;
+import com.example.chang.highway.util.mapshow;
 import com.example.register.Login;
 import com.example.register.Signin;
 
@@ -36,6 +38,7 @@ public class FirstFragment extends Fragment {
     private Button end;
     private Button time;
     private Button order;
+    private Button startmap;
     private int year, month, day;
     private MyApplication myApp;
 
@@ -47,10 +50,11 @@ public class FirstFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.first_fragment, container, false);
-        start = (Button) view.findViewById(R.id.start);
-        end = (Button) view.findViewById(R.id.end);
-        time = (Button) view.findViewById(R.id.btn);
-        order = (Button)view.findViewById(R.id.order);
+        start = view.findViewById(R.id.start);
+        end =  view.findViewById(R.id.end);
+        time = view.findViewById(R.id.btn);
+        order = view.findViewById(R.id.order);
+        startmap = view.findViewById(R.id.startmap);
 
         myApp = (MyApplication)getApplicationContext();
         start.setText(myApp.getAppstart());
@@ -61,7 +65,6 @@ public class FirstFragment extends Fragment {
 
 
         start.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(getActivity(), StartSearch.class);
@@ -88,6 +91,15 @@ public class FirstFragment extends Fragment {
                 myApp.setApptime(str);
                 Intent intent3 = new Intent(getActivity(), Order.class);
                 startActivity(intent3);
+            }
+        });
+        startmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent4 = new Intent(getActivity(),geo.class);
+                //intent.putExtra("starttext",1);
+                startActivity(intent4);
+                //startActivityForResult(intent,1);
             }
         });
 

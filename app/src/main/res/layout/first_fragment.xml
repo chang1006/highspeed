@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro"
+        app:srcCompat="@mipmap/fs_welcome" />
+
     <LinearLayout
         android:id="@+id/home_reserve"
         android:layout_width="match_parent"
@@ -88,6 +94,18 @@
     <Button
         android:id="@+id/order"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/royalblue"
+        android:text="预约"
+        android:textColor="@color/antiquewhite" />
+    <Button
+        android:id="@+id/startmap"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"

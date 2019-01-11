@@ -14,6 +14,7 @@ import cn.bmob.v3.listener.SaveListener;
 public class MyUser extends BmobObject {
     private String name;
     private String password;
+    private String phone;
 
     public String getName() {
         return name;
@@ -21,6 +22,7 @@ public class MyUser extends BmobObject {
     public void setName(String name) {
         this.name = name;
     }
+
     public String getPassWord() {
         return password;
     }
@@ -28,4 +30,10 @@ public class MyUser extends BmobObject {
         this.password = password;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }

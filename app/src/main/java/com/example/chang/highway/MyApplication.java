@@ -14,6 +14,8 @@ public class MyApplication extends Application {
     public String appnumber;
     public String apptype;
     public String appmoney;
+    public Double applat;
+    public Double applon;
     public String getAppstart() {
         return appstart;
     }
@@ -61,5 +63,18 @@ public class MyApplication extends Application {
     }
     public void setAppmoney(String appmoney) {
         this.appmoney = appmoney;
+    }
+
+    public Double getAppLat() {
+        return applat;
+    }
+    public void setAppLat(Double applat) {
+        this.applat = applat;
+    }
+    public Double getAppLon() {
+        return applon;
+    }
+    public void setAppLon(Double applon) {
+        this.applon = applon;
     }
 }
