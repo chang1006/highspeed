@@ -45,7 +45,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="20"
+<<<<<<< HEAD
         android:hint="请输入手机号" />
+=======
+        android:hint="请输入手机号"
+        android:inputType="textPassword" />
+>>>>>>> a79a4de9b3ed23956ab1062a44cad546e91718bd
 
         <TextView
             android:id="@+id/sendverification"

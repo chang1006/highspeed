@@ -25,10 +25,15 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //3.5.5：请务必查看下面注释[1]
     compile 'cn.bmob.android:bmob-sdk:3.5.5'
+<<<<<<< HEAD
     compile 'cn.bmob.android:bmob-sdk:3.4.7-aar'
     //bmob-sms ：Bmob单独为短信服务提供的包
     compile 'cn.bmob.android:bmob-sms:1.0.1'
     //兼容Android6.0
+=======
+    compile 'cn.bmob.android:bmob-sdk:3.4.7-aar'//bmob-sms ：Bmob单独为短信服务提供的包
+    compile 'cn.bmob.android:bmob-sms:1.0.1'//兼容Android6.0
+>>>>>>> a79a4de9b3ed23956ab1062a44cad546e91718bd
     implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
     implementation 'com.android.support:design:26.0.0-beta1'
     testImplementation 'junit:junit:4.12'

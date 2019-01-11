@@ -5,9 +5,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+<<<<<<< HEAD
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+=======
+>>>>>>> a79a4de9b3ed23956ab1062a44cad546e91718bd
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -115,6 +118,7 @@ public class Signin extends AppCompatActivity{
         sendverification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
+<<<<<<< HEAD
                 permission();
                 sendVerification();
 
@@ -124,6 +128,33 @@ public class Signin extends AppCompatActivity{
 
 
 
+=======
+                String phone = phonenumber.getText().toString();
+                cn.bmob.sms.BmobSMS.requestSMSCode(Signin.this, phone, "DataSDK", new RequestSMSCodeListener() {
+                    @Override
+                    public void done(Integer integer, cn.bmob.sms.exception.BmobException e) {
+                        if(e == null){
+                            new CountDownTimer(60000,1000){
+                                @Override
+                                public void onTick(long millisUntilFinished) {
+                                    sendverification.setText(millisUntilFinished / 1000 + "秒");
+                                }
+                                @Override
+                                public void onFinish() {
+                                    sendverification.setClickable(true);
+                                    sendverification.setText("重新发送");
+                                }
+                            }.start();
+                            Toast.makeText(Signin.this,"验证码发送成功，请尽快验证",Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText(Signin.this,"验证码发送失败",Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+        });
+
+>>>>>>> a79a4de9b3ed23956ab1062a44cad546e91718bd
         textView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
