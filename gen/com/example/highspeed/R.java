@@ -502,15 +502,19 @@ public final class R {
         public static final int ic_menu_service_on=0x7f020006;
         public static final int ic_menu_user_off=0x7f020007;
         public static final int ic_menu_user_on=0x7f020008;
-        public static final int tab_menu_bg=0x7f020009;
-        public static final int tab_menu_home=0x7f02000a;
-        public static final int tab_menu_home_text=0x7f02000b;
-        public static final int tab_menu_order=0x7f02000c;
-        public static final int tab_menu_order_text=0x7f02000d;
-        public static final int tab_menu_service=0x7f02000e;
-        public static final int tab_menu_service_text=0x7f02000f;
-        public static final int tab_menu_user=0x7f020010;
-        public static final int tab_menu_user_text=0x7f020011;
+        public static final int my_car=0x7f020009;
+        public static final int my_exit=0x7f02000a;
+        public static final int my_message=0x7f02000b;
+        public static final int my_person=0x7f02000c;
+        public static final int tab_menu_bg=0x7f02000d;
+        public static final int tab_menu_home=0x7f02000e;
+        public static final int tab_menu_home_text=0x7f02000f;
+        public static final int tab_menu_order=0x7f020010;
+        public static final int tab_menu_order_text=0x7f020011;
+        public static final int tab_menu_service=0x7f020012;
+        public static final int tab_menu_service_text=0x7f020013;
+        public static final int tab_menu_user=0x7f020014;
+        public static final int tab_menu_user_text=0x7f020015;
     }
     public static final class id {
         public static final int action_settings=0x7f09000d;
